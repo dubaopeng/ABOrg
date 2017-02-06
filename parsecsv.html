@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Tree Example</title>
+  </head>
+  <body>
+
+    <script src="./PapaParse-master/papaparse.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.8.2.js"></script>
+    <script src="./generateGraphData.js"></script>
+    <script>
+      var data;
+    
+
+      function handleFileSelect(evt) {
+        var file = evt.target.files[0];
+     
+        Papa.parse(file, {
+          header: true,
+          dynamicTyping: true,
+          complete: function(results) {
+            generateGraphData(results);
+          }
+        });
+      }
+     
+      $(document).ready(function(){
+        $("#csv-file").change(handleFileSelect);
+      });
+    </script>
+    <input type="file" id="csv-file" name="files"/>
+
+  </body>
+</html>

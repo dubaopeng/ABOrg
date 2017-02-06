@@ -1,0 +1,89 @@
+Area,Feature Name,Global PdM,International PdM,TPM,SDM,UX,Dev team,Global PdM  Leader,Dev Team Loc
+Customer Accounts,Account Management  - International Launches,Murali Govind,"EU: Keith Williams
+JP:Tsuyoshi Jinguji",Kay Wood,Tyler Royal ,Keith Ford,,Sundar Raghavan,AUS
+Customer Accounts,Account Management - Business Accounts Experience,Murali Govind,"EU: Keith Williams
+JP:Tsuyoshi Jinguji",Chad  Morris,Ryan Clifton,Will Joyner,Business Accounts,Sundar Raghavan,AUS
+Customer Accounts,Account Management - EAM,Austin TBH (Murali Govind),"EU: Keith Williams
+JP:Tsuyoshi Jinguji",Ritu Gupta,TBH (Alex Davis), ,,Sundar Raghavan,AUS
+Customer Accounts,Account Management Platform - AMP ,Murali Govind,"EU: Keith Williams
+JP:Tsuyoshi Jinguji",Kevin Grubbs,TBH (Alex Davis),David/Will,AMP,Sundar Raghavan,AUS
+Delivery & Fulfilment,Approvals (Ordering),Jimin Patel,"EU: Keith Williams
+JP:Tsuyoshi Jinguji",Patricia Ruiz,Nachi Meyyappan,,,Sundar Raghavan,SEA
+Procurement Solutions,Bulk Delivery Program,Kanishka Roychoudhury,"EU: Joel Finkey
+JP: Tsuyoshi Jinguji",None,None,Chuck Ames,,Anchit  Sathi,TBD
+Search Discovery Order Engine,Business Detail Pages,"Rushabh Vora
+","
+EU: Pooja Verma
+JP: Tsuyoshi Jinguji",Gurneet Jodhka,Balaji Rathakrishnan,,,Kevin Shields,HYD
+Search Discovery Order Engine,Business Lists,Rick Duong,"
+EU: Pooja Verma
+JP: Tsuyoshi Jinguji",TBH,TBH (Lara Sosnosky),,,Anchit  Sathi,TBD
+Category Selection,Business Search & Discovery,Rajive Hettiaratchi ,"
+EU: Pooja Verma
+JP: Tsuyoshi Jinguji",Gurneet Jodhka,N/A Partner Team,Ana Gallardo,,Kevin Shields,"SEA, CA (Sx, A9)"
+Delivery & Fulfilment,Business Selection (Business Only Selection),Seattle TBH - PMT (Karimah Knowles ),"
+EU: Pooja Verma
+JP: Tsuyoshi Jinguji",Saranya Thirumoolan,Curt Berry,,,Sundar Raghavan,AUS
+Category Selection,Business Shipping,Muskaan Rataul,"EU: Joel Finkey
+JP: Tsuyoshi Jinguji",Adeel Hasan,Daniel D'Avignon-Aubut,Ana Gallardo,,Anchit  Sathi,MAD
+Verticals,Catalog Quality,"Ana Giannoulas
+","
+EU: Pooja Verma
+JP: Tsuyoshi Jinguji",None,None,,,Kevin Shields,"SEA, HYD (partner teams)"
+Search Discovery Order Engine,Checkout,Seattle TBH - PMT (Jimin Patel),N/A,Patricia Ruiz,Dave Currie,,,Sundar Raghavan,MAD
+Support & Internal Tools,CS Tools & Operations for AB,TBH (Kevin Shields),"EU: Joel Finkey
+JP: Tsuyoshi Jinguji",TTV Raghavan,None,,,Kevin Shields,HYD (partner teams)
+Supplier Discovery & Preference,Curation,Hersh Nagar,"
+EU: Pooja Verma
+JP: Tsuyoshi Jinguji",David Soldate,Noelia Moron [Jaime Vallori],Fernando Sanchez Ulloa,,Sundar Raghavan,MAD
+Customer Accounts,Customer Acquisition & Marketing Automation,Seattle TBH - PMT (Satya Mishra),"
+EU: Pooja Verma
+JP: Tsuyoshi Jinguji",Pooja Mandore,Mohammed Alabsi,,,Sundar Raghavan,SEA
+Procurement Solutions,Delivery Experience (DEX),Ruth Densborn,"EU: Joel Finkey
+JP: Tsuyoshi Jinguji",TBH (Adeel Hasan in interim) ,Neha Goswami (will own DEX ranger team),TBH,,Anchit  Sathi,TBD
+Procurement Solutions,Enterprise Systems Integrations (fka PPI),Satya Mishra,Satya Mishra,None,Bharat Mabbu ,,,Sundar Raghavan,SEA
+Procurement Solutions,Gateway,"Rushabh Vora
+","
+EU: Pooja Verma
+JP: Tsuyoshi Jinguji",Gurneet Jodhka, Parag Chaurasia,Jorge Cubillo,,Kevin Shields,HYD
+Category Selection,Global Navigation,"Rushabh Vora
+","
+EU: Pooja Verma
+JP: Tsuyoshi Jinguji",Gurneet Jodhka, Parag Chaurasia,Jorge Cubillo,,Kevin Shields,HYD
+Procurement Solutions,Global Tax and Amazon Tax Exemption Platform (ATEP),"Seattle TBH - PMT (Justin Farley)
+",VAT: Ming Cheng,TBH (Steve Fuchs), None - Alex Davis,,,Sundar Raghavan,TBD
+Support & Internal Tools,HC logistics network,Steve Cox,TBD,TBD,TBD,TBD,,Anchit  Sathi,SEA (partner team)
+Support & Internal Tools,Ingestion,John Lynch,John Lynch,David Soldate,Stefan Guna [Jaime Vallori],Borja Navarro,,Sundar Raghavan,MAD
+Search Discovery Order Engine,Internal Procurement ,Ashwin Pingali   ,Ashwin Pingali   ,Miguel Gonzales,Lindsey Bauer,,,Anchit  Sathi,SEA
+Search Discovery Order Engine,Inventory Management (Forecasting/Buying/Placement), Adham Abdelfattah,"EU: Joel Finkey
+JP: Tsuyoshi Jinguji",None,None,,,Anchit  Sathi,SEA (partner team)
+Invoice & Payment,Live Expert,Corey Robinson,Corey Robinson,None,Tony Bryan   ,,,Kevin Shields,SEA
+Search Discovery Order Engine,Loyalty Program,Diego Asenjo,Diego Asenjo,Adeel Hasan,Daniel D'Avignon-Aubut,,,Anchit  Sathi,MAD
+Procurement Solutions,Master distributor,(TBH) Gregoire Hirtz,TBD,TBD,TBD,TBD,,Anchit  Sathi,SEA (partner team)
+Category Selection,Mobile,TBH (Kevin Shields),Kevin Shields,TBH [Aaron Lockey],Vivek Sagi,Chrix Urbina,,Kevin Shields,AUS
+Category Selection,Multi-package Delivery Synchronization (MPDS),Guy Friedel,"EU: Joel Finkey
+JP: Tsuyoshi Jinguji",None,None,,,Anchit  Sathi,SEA (partner team)
+Category Selection,Pallets level 2,Steve Cox,TBD,TBD,TBD,TBD,,Anchit  Sathi,SEA (partner team)
+Procurement Solutions,Pay by Invoice,"Ben Goeltz, Vikram Ray","Ben Goeltz, Vikram Ray",Damana Madden ,Tony Bryan (AB),,,Anchit  Sathi,SEA
+Category Selection,Personalization (P13N),Paul Jaeschke,"EU: Pooja Verma
+JP: Tsuyoshi Jinguji",Gurneet Jodhka,None in AB,Andres Saa,,Kevin Shields,SEA (partner team)
+Delivery & Fulfillment,Pricing - VFBD/QP/Segment,John Lynch,John Lynch,Joanna Gallo,"Satish (Gorka, TBH, Kumaran)",Jorge Cubillo [Shopping]; Kevin Cook [platform],,Sundar Raghavan,"SEA, MAD"
+Customer Accounts,Pricing-CSP,Diane Lee,"EU: Pooja Verma
+JP: Tsuyoshi Jinguji",Joanna Gallo,"Satish (Gorka, TBH, Kumaran)",Jorge Cubillo [Shopping]; Kevin Cook [platform],,Sundar Raghavan,"SEA, MAD"
+Delivery & Fulfillment,Professional Licensing Platform (PLP)/Certification. Healthcare Vertical.,Justin Farley,N/A,TBH,James Mitchell,,Soyuz,Sundar Raghavan,SEA
+Customer Accounts,Project Janus (Provate Marketplace Foundation),Austin TBH (Karimah Knowles),NA,David Soldate,Vivek Sagi,,,Sundar Raghavan,AUS
+Partner Integration,Quantity Limits,Kumar Pillai,"EU: Joel Finkey
+JP: Tsuyoshi Jinguji",TBH,TBH (Lara Sosnosky),,,Anchit  Sathi,SEA
+Partner Integration,Quoting (ex. request for quote),Ananth Vasishta,Ananth Vasishta,Don Yantzi,"TBC - 1 platform (under Satish), Arnab Banerjee (under Bharath)",Alyssa Cone,,Sundar Raghavan,"TBD, HYD"
+Delivery & Fulfillment,Recurring Delivery,Francklin Mondesir,Francklin Mondesir,Steve Fuchs,TBH,,,Anchit  Sathi,SEA (partner team)
+Supplier Discovery & Preference,Registration/Verification ,Virgilia Pruthi,"EU: Justin Farley
+JP: Tsuyoshi Jinguji",TBH (Chad Morris interim),Nate Forman,Jennifer Hoppenrath,Onboarding,Sundar Raghavan,AUS
+Supplier Discovery & Preference,Replenishment,Ruth Densborn,"EU: Joel Finkey
+JP: Tsuyoshi Jinguji",Steve Fuchs,Chendur ,,,Anchit  Sathi,TBD
+Delivery & Fulfillment,Reporting (ABA - AB Analtyics),Ameya Thorat,"EU: Ameya Thorat
+JP: Tsuyoshi Jinguji",None,Vijay Reddy,,,Sundar Raghavan,"SEA,MAD"
+Delivery & Fulfillment,Service upon delivery,(TBH) Gregoire Hirtz,TBD,TBD,TBD,TBD,,Anchit  Sathi,SEA (partner team)
+Delivery & Fulfillment,Speed vs. consolidation (aka Consolidated Deliveries),Guy Friedel,"EU: Joel Finkey
+JP: Tsuyoshi Jinguji",None,None,,,Anchit  Sathi,SEA (partner team)
+Delivery & Fulfillment,Strategic Sourcing,Seattle TBH,TBD,TBD,TBD,,,Sundar Raghavan,
+Delivery & Fulfillment,Ultra-fast delivery,Gregoire Hirtz,TBD,TBD,TBD,TBD,,Anchit  Sathi,SEA (partner team)
