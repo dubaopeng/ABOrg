@@ -15,43 +15,44 @@ function update(source) {
   var nodeEnter = node.enter().append("g")
 	  .attr("class", "node")
 	  .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
-	  .on("click", click);
+	  .on("click", click)
+    .merge(node);
 
   nodeEnter.append("circle")
 	  .attr("r", function (d) { return 10; })
 	  .style("fill", function(d) { return setFillImage(d); });
 
   var nodeText = nodeEnter.append("text")
-	  .attr("x", function(d) { 
-      var x = d.data.icon ? 40 : 13;
-      x = (d.children || d._children) ? -x : x;
-      return x;
+    .attr("x", function(d) { 
+        var x = d.data.icon ? 40 : 13;
+        x = (d.children || d._children) ? -x : x;
+        return x;
     })
-	  .attr("dy", ".35em")
-	  .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
-	  .text(function(d) { 
-      if (d.data.displayname) {
-        return d.data.displayname;
-      }
-      return d.id; 
+    .attr("dy", ".35em")
+    .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
+    .text(function(d) { 
+        if (d.data.displayname) {
+            return d.data.displayname;
+        }
+        return d.id; 
     })
-	  .style("fill-opacity", 1)
+    .style("fill-opacity", 1)
     .on("click", onNav)
     .on("mouseover", function(d){
-      if (d.link) {
-        tooltip[0][0].innerHTML = d.link;
-        return tooltip.style("visibility", "visible");
-      }
+        if (d.link) {
+            tooltip[0][0].innerHTML = d.link;
+            return tooltip.style("visibility", "visible");
+        }
     })
     .on("mousemove", function(d){
-      if (d.link) {
+        if (d.link) {
         return tooltip.style("top", (d3.event.pageY-20)+"px").style("left",(d3.event.pageX+20)+"px");
-      }
+        }
     })
     .on("mouseout", function(){return tooltip.style("visibility", "hidden");});
 
   // Transition nodes to their new position.
-  var nodeUpdate = node.enter().transition()
+  var nodeUpdate = nodeEnter.transition()
 	  .duration(duration)
 	  .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; });
 
@@ -79,15 +80,16 @@ function update(source) {
 	  .data(links, function(d) { return d.target.ident; });
 
   // Enter any new links at the parent's previous position.
-  link.enter().insert("path", "g")
-	  .attr("class", "link")
-	  .attr("d", function(d) {
-      var o = {x: source.x0, y: source.y0};
-      return xxx({source: o, target: o});
-	  });
+  var linkEnter = link.enter().insert("path", "g")
+    .attr("class", "link")
+    .attr("d", function(d) {
+        var o = {x: source.x0, y: source.y0};
+        return xxx({source: o, target: o});
+    })
+    .merge(link);
 
   // Transition links to their new position.
-  link.transition()
+  linkEnter.transition()
 	  .duration(duration)
 	  .attr("d", xxx);
 

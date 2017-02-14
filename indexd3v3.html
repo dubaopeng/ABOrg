@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Tree Example</title>
+
+    <style>
+      div#first{
+        background-image: url("./amazonbusiness.png"); 
+        position: fixed;
+        opacity: 0.1;
+        z-index: -1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      img {
+        opacity: 0.5;
+      }
+
+      .node {
+        cursor: pointer;
+      }
+
+      .node circle {
+        fill: #fff;
+        stroke: steelblue;
+        stroke-width: 3px;
+      }
+
+      .node text {
+        font: 12px sans-serif;
+      }
+
+      .link {
+        fill: none;
+        stroke: #ccc;
+        stroke-width: 2px;
+      }
+	
+    </style>
+  </head>
+  <body>
+
+    <svg>
+      <defs>
+        <pattern id="team" patternUnits="objectBoundingBox" height="100%" width="100%">
+          <image xlink:href="./team.png" height="60" width="60" preserveAspectRatio = "none"></image>
+        </pattern>
+        <pattern id="ux" patternUnits="objectBoundingBox" height="100%" width="100%">
+          <image xlink:href="./ux.png" height="60" width="60" preserveAspectRatio = "none"></image>
+        </pattern>
+        <pattern id="architecture" patternUnits="objectBoundingBox" height="100%" width="100%">
+          <image xlink:href="./architecture.png" height="60" width="60" preserveAspectRatio = "none"></image>
+        </pattern>
+        <pattern id="service" patternUnits="objectBoundingBox" height="100%" width="100%">
+          <image xlink:href="./service.png" height="60" width="60" preserveAspectRatio = "none"></image>
+        </pattern>
+        <pattern id="contacts" patternUnits="objectBoundingBox" height="100%" width="100%">
+          <image xlink:href="./contacts.png" height="60" width="60" preserveAspectRatio = "none"></image>
+        </pattern>
+      </defs>
+    </svg>    
+
+    <div id="first">
+    </div>
+
+    <script src="./DrawGraphd3v3.js"></script>
+    <script src="./d3/d3.js"></script>
+    <script src="./generateGraphData.js"></script>
+
+    <script>
+
+      var tooltip = d3.select("body")
+          .append("div")
+          .style("position", "absolute")
+          .style("z-index", "10")
+          .style("visibility", "hidden")
+          .text("a simple tooltip");
+
+      var i = 0,
+          duration = 750,
+          root;
+
+      var margin = {top: 20, right: 120, bottom: 20, left: 120},
+          width = 2000 - margin.right - margin.left,
+          height = 800 - margin.top - margin.bottom;
+          
+      var tree = d3.tree()
+          .size([height, width]);
+
+      var svg = d3.select("body").select("svg")
+          .attr("width", width + margin.right + margin.left)
+          .attr("height", height + margin.top + margin.bottom)
+          .append("g")
+          .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+      d3.csv("./roadmap.csv", function(data){
+
+          var graphData = generateGraphData(data);
+
+          var treeData = d3.stratify()
+            .id(function(d) { return d.name; })
+            .parentId(function(d) { return d.parent; })
+            (graphData);
+
+          // ************** Generate the tree diagram	 *****************
+          root = treeData;
+          root.x0 = height / 2;
+          root.y0 = 0;
+          
+          update(root);
+
+          d3.select(self.frameElement).style("height", "500px");
+
+          //Compute the new tree layout.
+          var nodes = tree(root);
+
+          // Normalize for fixed-depth.
+          nodes.descendants().reverse().forEach(function(d) { 
+              if (d.children) {
+                d._children = d.children;
+                d.children = null;
+              } else {
+                d.children = d._children;
+                d._children = null;
+              } 
+          });
+
+          update(root);
+      });
+
+    </script> 
+
+  </body>
+</html>
