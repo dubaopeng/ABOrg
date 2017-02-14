@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tree Example</title>
+  </head>
+  <body>
+
+    <svg>
+    </svg>    
+
+    <div id="first">
+    </div>
+    <script src="./d3/d3.v3.js"></script>
+    <script src="./d3-hierarchy/d3-hierarchy.min.js"></script>
+    <script src="./generateGraphData.js"></script>
+    <script>
+
+      var margin = {top: 20, right: 120, bottom: 20, left: 120},
+          width = 2000 - margin.right - margin.left,
+          height = 800 - margin.top - margin.bottom;
+
+      var svg = d3.select("body").select("svg")
+          .attr("width", width + margin.right + margin.left)
+          .attr("height", height + margin.top + margin.bottom)
+          .append("g")
+          .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+   
+       var i=0;   
+      var tree = d3.layout.tree()
+          .size([height, width]);
+
+      d3.csv("./roadmap.csv", function(data){
+
+          var graphData = generateGraphData(data);
+
+          var treeData = d3.stratify()
+            .id(function(d) { return d.name; })
+            .parentId(function(d) { return d.parent; })
+            (graphData);
+
+          // ************** Generate the tree diagram	 *****************
+         var root = treeData;
+          root.x0 = height / 2;
+          root.y0 = 0;
+
+        var nodes = tree.nodes(root).reverse(),
+          links = tree.links(nodes);
+
+        // Normalize for fixed-depth.
+        nodes.forEach(function(d) { d.y = d.depth * 180; });
+        
+        // Update the nodes…
+        var node = svg.selectAll("g.node")
+           .data(nodes, function(d) { return d.ident || (d.ident = ++i); });
+        
+          // Enter any new nodes at the parent's previous position.
+        var nodeEnter = node.enter().append("g")
+          .attr("class", "node")
+          .attr("transform", function(d) { return "translate(" + 100 + "," + 100 + ")"; });
+          
+        var nodeUpdate = node.transition()
+          .duration(750)
+          .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; });
+
+        console.log(node);
+    
+      });
+           
+    </script> 
+
+  </body>
+</html>
