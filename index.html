@@ -69,10 +69,7 @@
     </div>
 
     <script src="./DrawGraph.js"></script>
-    <script src="./d3/d3.v3.js"></script>
-    <script src="./d3-hierarchy/d3-hierarchy.min.js"></script>
-    <script src="./jquery-3.1.1.min.js"></script>
-    <script src="./jquery.csv.js"></script>
+    <script src="./d3/d3.js"></script>
     <script src="./generateGraphData.js"></script>
 
     <script>
@@ -92,13 +89,8 @@
           width = 2000 - margin.right - margin.left,
           height = 800 - margin.top - margin.bottom;
           
-      var tree = d3.layout.tree()
+      var tree = d3.tree()
           .size([height, width]);
-
-      var diagonal = d3.svg.diagonal()
-          .projection(function(d) { 
-            return [d.y, d.x]; 
-      });
 
       var svg = d3.select("body").select("svg")
           .attr("width", width + margin.right + margin.left)
@@ -124,22 +116,21 @@
 
           d3.select(self.frameElement).style("height", "500px");
 
-          // Compute the new tree layout.
-          //var nodes = tree.nodes(root).reverse();
+          //Compute the new tree layout.
+          var nodes = tree(root);
 
-          // // Normalize for fixed-depth.
-          // nodes.forEach(function(d) { 
-          //   //click(d);
-          //     if (d.children) {
-          //       d._children = d.children;
-          //       d.children = null;
-          //     } else {
-          //       d.children = d._children;
-          //       d._children = null;
-          //     } 
-          // });
+          // Normalize for fixed-depth.
+          nodes.descendants().reverse().forEach(function(d) { 
+              if (d.children) {
+                d._children = d.children;
+                d.children = null;
+              } else {
+                d.children = d._children;
+                d._children = null;
+              } 
+          });
 
-          // update(root);
+          update(root);
       });
 
     </script> 
