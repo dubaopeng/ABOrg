@@ -6,10 +6,13 @@ function generateGraphData(results) {
     var AB = "Amazon Business";
 
     //Remove any empty row at the end of the csv data
-    if (results[results.length-1]["Feature Name"] == undefined) {
-        console.log("found empty row");
-        results.splice(results.length-1, 1);
+    for (var i = results.length-1; i >= 0; i--) {
+        if (results[i]["Feature Name"] == undefined || results[i]["Feature Name"] == "") {
+            console.log("found empty row");
+            results.splice(i, 1);
+        }
     }
+
 
     // Set the root node (Level 0)   
     rowData.name = AB;
@@ -40,8 +43,8 @@ function generateGraphData(results) {
             var rowData = {};
             rowData.name = results[i]["Feature Name"];
             rowData.parent = results[i].Area;
-            rowData.link = "";
-            rowData.icon = "";
+            rowData.link = results[i]["Description"];
+            rowData.icon = getTeamIcon(results[i]);
             graphData.push(rowData);
     }
 
@@ -57,7 +60,7 @@ function generateGraphData(results) {
         var parentName = graphData[previousLevelOffset + i].name;
         rowData.name = parentName + "+Team";
         rowData.parent = parentName;
-        rowData.link = "http://www.amazon.com";
+        rowData.link = results[i]["Team Wiki"];
         rowData.icon = "team";
         rowData.displayname = "Team Site";
         graphData.push(rowData);
@@ -66,7 +69,7 @@ function generateGraphData(results) {
         rowData = {};
         rowData.name = parentName + "+UX";
         rowData.parent = parentName;
-        rowData.link = "http://www.amazon.com";
+        rowData.link = results[i]["UX Designs"];
         rowData.icon = "ux";
         rowData.displayname = "UX Designs";
         graphData.push(rowData);
@@ -75,25 +78,25 @@ function generateGraphData(results) {
         rowData = {};
         rowData.name = parentName + "+Architecture";
         rowData.parent = parentName;
-        rowData.link = "http://www.amazon.com";
+        rowData.link = results[i]["Arch Designs"];
         rowData.icon = "architecture";
         rowData.displayname = "Architecture Designs";
         graphData.push(rowData);
 
         // Add Team Services nodes
-        rowData = {};
-        rowData.name = parentName + "+Services";
-        rowData.parent = parentName;
-        rowData.link = "http://www.amazon.com";
-        rowData.icon = "service";
-        rowData.displayname = "Team Services";
-        graphData.push(rowData);
+        // rowData = {};
+        // rowData.name = parentName + "+Services";
+        // rowData.parent = parentName;
+        // rowData.link = phoneTool;
+        // rowData.icon = "service";
+        // rowData.displayname = "Team Services";
+        // graphData.push(rowData);
 
         // Add Team Contact nodes
         rowData = {};
         rowData.name = parentName + "+Contacts";
         rowData.parent = parentName;
-        rowData.link = "http://www.amazon.com";
+        rowData.link = phoneTool;
         rowData.displayname = "Team Contacts";
         rowData.icon = "contacts";
         graphData.push(rowData);
@@ -105,65 +108,95 @@ function generateGraphData(results) {
 
     // Add the Team Contacts (Level 4)
     console.log("Level 4 starting...");
+    var phoneTool = "https://phonetool.amazon.com/users/";
+
     for (var i = 0; i < results.length; i++) {        
         var rowData = {};
         rowData.name = results[i].SDM;
         rowData.parent = results[i]["Feature Name"] + "+Contacts";
-        rowData.link = "http://www.amazon.com";
+        rowData.link = phoneTool + getNameAndAlias(rowData.name)[1];
         rowData.icon = "";
-        rowData.displayname = "SDM: " + rowData.name;
+        rowData.displayname = "SDM: " + getNameAndAlias(rowData.name)[0];
         graphData.push(rowData);
 
         rowData = {};
         rowData.name = results[i].TPM;
         rowData.parent = results[i]["Feature Name"] + "+Contacts";
-        rowData.link = "http://www.amazon.com";
+        rowData.link = phoneTool + getNameAndAlias(rowData.name)[1];
         rowData.icon = "";
-        rowData.displayname = "TPM: " + rowData.name;
+        rowData.displayname = "TPM: " + getNameAndAlias(rowData.name)[0];
         graphData.push(rowData);
 
         rowData = {};
         rowData.name = results[i].UX;
         rowData.parent = results[i]["Feature Name"] + "+Contacts";
-        rowData.link = "http://www.amazon.com";
+        rowData.link = phoneTool + getNameAndAlias(rowData.name)[1];
         rowData.icon = "";
-        rowData.displayname = "UX: " + rowData.name;
+        rowData.displayname = "UX: " + getNameAndAlias(rowData.name)[0];
         graphData.push(rowData);
 
         rowData = {};
         rowData.name = results[i]["International PdM"];
         rowData.parent = results[i]["Feature Name"] + "+Contacts";
-        rowData.link = "http://www.amazon.com";
+        rowData.link = phoneTool + getNameAndAlias(rowData.name)[1];
         rowData.icon = "";
-        rowData.displayname = "Intl PdM: " + rowData.name;
+        rowData.displayname = "Intl PdM: " + getNameAndAlias(rowData.name)[0];
         graphData.push(rowData);
 
         rowData = {};
         rowData.name = results[i]["Global PdM  Leader"];
         rowData.parent = results[i]["Feature Name"] + "+Contacts";
-        rowData.link = "http://www.amazon.com";
+        rowData.link = phoneTool + getNameAndAlias(rowData.name)[1];
         rowData.icon = "";
-        rowData.displayname = "Global PdM  Leader: " + rowData.name;
+        rowData.displayname = "Global PdM  Leader: " + getNameAndAlias(rowData.name)[0];
         graphData.push(rowData);
         
         rowData = {};
         rowData.name = results[i]["Global PdM"];
         rowData.parent = results[i]["Feature Name"] + "+Contacts";
-        rowData.link = "http://www.amazon.com";
+        rowData.link = phoneTool + getNameAndAlias(rowData.name)[1];
         rowData.icon = "";
-        rowData.displayname = "Global PdM: " + rowData.name;
+        rowData.displayname = "Global PdM: " + getNameAndAlias(rowData.name)[0];
         graphData.push(rowData);
 
         rowData = {};
         rowData.name = results[i]["Dev Team Loc"];
         rowData.parent = results[i]["Feature Name"] + "+Contacts";
-        rowData.link = "http://www.amazon.com";
+        rowData.link = phoneTool + getNameAndAlias(rowData.name)[1];
         rowData.icon = "";
-        rowData.displayname = "Dev Team Loc: " + rowData.name;
+        rowData.displayname = "Dev Team Loc: " + getNameAndAlias(rowData.name)[0];
         graphData.push(rowData);
 
     }
 
     console.log(graphData);
     return graphData;
+}
+
+function getNameAndAlias(data) {
+    if (data) {
+        var result = data.split(";").map(function (elem) {
+            return elem.trim();
+        });
+        return result;
+    }
+
+    return [""];
+}
+
+function getTeamIcon(data) {
+    if (data) {
+        if (data["Dev Team Loc"] == "MAD") {
+            return "bull";
+        }
+        else if (data["Dev Team Loc"] == "SEA") {
+            return "bull";
+        }
+        else if (data["Dev Team Loc"] == "AUS") {
+            return "bull";
+        }
+        else if (data["Dev Team Loc"] == "HYD") {
+            return "bull";
+        }        
+    }
 }

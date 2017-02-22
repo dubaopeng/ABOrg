@@ -1,89 +1,83 @@
-Area,Feature Name,Global PdM,International PdM,TPM,SDM,UX,Dev team,Global PdM  Leader,Dev Team Loc
-Customer Accounts,Account Management  - International Launches,Murali Govind,"EU: Keith Williams
-JP:Tsuyoshi Jinguji",Kay Wood,Tyler Royal ,Keith Ford,,Sundar Raghavan,AUS
-Customer Accounts,Account Management - Business Accounts Experience,Murali Govind,"EU: Keith Williams
-JP:Tsuyoshi Jinguji",Chad  Morris,Ryan Clifton,Will Joyner,Business Accounts,Sundar Raghavan,AUS
-Customer Accounts,Account Management - EAM,Austin TBH (Murali Govind),"EU: Keith Williams
-JP:Tsuyoshi Jinguji",Ritu Gupta,TBH (Alex Davis), ,,Sundar Raghavan,AUS
-Customer Accounts,Account Management Platform - AMP ,Murali Govind,"EU: Keith Williams
-JP:Tsuyoshi Jinguji",Kevin Grubbs,TBH (Alex Davis),David/Will,AMP,Sundar Raghavan,AUS
-Delivery & Fulfilment,Approvals (Ordering),Jimin Patel,"EU: Keith Williams
-JP:Tsuyoshi Jinguji",Patricia Ruiz,Nachi Meyyappan,,,Sundar Raghavan,SEA
-Procurement Solutions,Bulk Delivery Program,Kanishka Roychoudhury,"EU: Joel Finkey
-JP: Tsuyoshi Jinguji",None,None,Chuck Ames,,Anchit  Sathi,TBD
-Search Discovery Order Engine,Business Detail Pages,"Rushabh Vora
-","
-EU: Pooja Verma
-JP: Tsuyoshi Jinguji",Gurneet Jodhka,Balaji Rathakrishnan,,,Kevin Shields,HYD
-Search Discovery Order Engine,Business Lists,Rick Duong,"
-EU: Pooja Verma
-JP: Tsuyoshi Jinguji",TBH,TBH (Lara Sosnosky),,,Anchit  Sathi,TBD
-Category Selection,Business Search & Discovery,Rajive Hettiaratchi ,"
-EU: Pooja Verma
-JP: Tsuyoshi Jinguji",Gurneet Jodhka,N/A Partner Team,Ana Gallardo,,Kevin Shields,"SEA, CA (Sx, A9)"
-Delivery & Fulfilment,Business Selection (Business Only Selection),Seattle TBH - PMT (Karimah Knowles ),"
-EU: Pooja Verma
-JP: Tsuyoshi Jinguji",Saranya Thirumoolan,Curt Berry,,,Sundar Raghavan,AUS
-Category Selection,Business Shipping,Muskaan Rataul,"EU: Joel Finkey
-JP: Tsuyoshi Jinguji",Adeel Hasan,Daniel D'Avignon-Aubut,Ana Gallardo,,Anchit  Sathi,MAD
-Verticals,Catalog Quality,"Ana Giannoulas
-","
-EU: Pooja Verma
-JP: Tsuyoshi Jinguji",None,None,,,Kevin Shields,"SEA, HYD (partner teams)"
-Search Discovery Order Engine,Checkout,Seattle TBH - PMT (Jimin Patel),N/A,Patricia Ruiz,Dave Currie,,,Sundar Raghavan,MAD
-Support & Internal Tools,CS Tools & Operations for AB,TBH (Kevin Shields),"EU: Joel Finkey
-JP: Tsuyoshi Jinguji",TTV Raghavan,None,,,Kevin Shields,HYD (partner teams)
-Supplier Discovery & Preference,Curation,Hersh Nagar,"
-EU: Pooja Verma
-JP: Tsuyoshi Jinguji",David Soldate,Noelia Moron [Jaime Vallori],Fernando Sanchez Ulloa,,Sundar Raghavan,MAD
-Customer Accounts,Customer Acquisition & Marketing Automation,Seattle TBH - PMT (Satya Mishra),"
-EU: Pooja Verma
-JP: Tsuyoshi Jinguji",Pooja Mandore,Mohammed Alabsi,,,Sundar Raghavan,SEA
-Procurement Solutions,Delivery Experience (DEX),Ruth Densborn,"EU: Joel Finkey
-JP: Tsuyoshi Jinguji",TBH (Adeel Hasan in interim) ,Neha Goswami (will own DEX ranger team),TBH,,Anchit  Sathi,TBD
-Procurement Solutions,Enterprise Systems Integrations (fka PPI),Satya Mishra,Satya Mishra,None,Bharat Mabbu ,,,Sundar Raghavan,SEA
-Procurement Solutions,Gateway,"Rushabh Vora
-","
-EU: Pooja Verma
-JP: Tsuyoshi Jinguji",Gurneet Jodhka, Parag Chaurasia,Jorge Cubillo,,Kevin Shields,HYD
-Category Selection,Global Navigation,"Rushabh Vora
-","
-EU: Pooja Verma
-JP: Tsuyoshi Jinguji",Gurneet Jodhka, Parag Chaurasia,Jorge Cubillo,,Kevin Shields,HYD
-Procurement Solutions,Global Tax and Amazon Tax Exemption Platform (ATEP),"Seattle TBH - PMT (Justin Farley)
-",VAT: Ming Cheng,TBH (Steve Fuchs), None - Alex Davis,,,Sundar Raghavan,TBD
-Support & Internal Tools,HC logistics network,Steve Cox,TBD,TBD,TBD,TBD,,Anchit  Sathi,SEA (partner team)
-Support & Internal Tools,Ingestion,John Lynch,John Lynch,David Soldate,Stefan Guna [Jaime Vallori],Borja Navarro,,Sundar Raghavan,MAD
-Search Discovery Order Engine,Internal Procurement ,Ashwin Pingali   ,Ashwin Pingali   ,Miguel Gonzales,Lindsey Bauer,,,Anchit  Sathi,SEA
-Search Discovery Order Engine,Inventory Management (Forecasting/Buying/Placement), Adham Abdelfattah,"EU: Joel Finkey
-JP: Tsuyoshi Jinguji",None,None,,,Anchit  Sathi,SEA (partner team)
-Invoice & Payment,Live Expert,Corey Robinson,Corey Robinson,None,Tony Bryan   ,,,Kevin Shields,SEA
-Search Discovery Order Engine,Loyalty Program,Diego Asenjo,Diego Asenjo,Adeel Hasan,Daniel D'Avignon-Aubut,,,Anchit  Sathi,MAD
-Procurement Solutions,Master distributor,(TBH) Gregoire Hirtz,TBD,TBD,TBD,TBD,,Anchit  Sathi,SEA (partner team)
-Category Selection,Mobile,TBH (Kevin Shields),Kevin Shields,TBH [Aaron Lockey],Vivek Sagi,Chrix Urbina,,Kevin Shields,AUS
-Category Selection,Multi-package Delivery Synchronization (MPDS),Guy Friedel,"EU: Joel Finkey
-JP: Tsuyoshi Jinguji",None,None,,,Anchit  Sathi,SEA (partner team)
-Category Selection,Pallets level 2,Steve Cox,TBD,TBD,TBD,TBD,,Anchit  Sathi,SEA (partner team)
-Procurement Solutions,Pay by Invoice,"Ben Goeltz, Vikram Ray","Ben Goeltz, Vikram Ray",Damana Madden ,Tony Bryan (AB),,,Anchit  Sathi,SEA
-Category Selection,Personalization (P13N),Paul Jaeschke,"EU: Pooja Verma
-JP: Tsuyoshi Jinguji",Gurneet Jodhka,None in AB,Andres Saa,,Kevin Shields,SEA (partner team)
-Delivery & Fulfillment,Pricing - VFBD/QP/Segment,John Lynch,John Lynch,Joanna Gallo,"Satish (Gorka, TBH, Kumaran)",Jorge Cubillo [Shopping]; Kevin Cook [platform],,Sundar Raghavan,"SEA, MAD"
-Customer Accounts,Pricing-CSP,Diane Lee,"EU: Pooja Verma
-JP: Tsuyoshi Jinguji",Joanna Gallo,"Satish (Gorka, TBH, Kumaran)",Jorge Cubillo [Shopping]; Kevin Cook [platform],,Sundar Raghavan,"SEA, MAD"
-Delivery & Fulfillment,Professional Licensing Platform (PLP)/Certification. Healthcare Vertical.,Justin Farley,N/A,TBH,James Mitchell,,Soyuz,Sundar Raghavan,SEA
-Customer Accounts,Project Janus (Provate Marketplace Foundation),Austin TBH (Karimah Knowles),NA,David Soldate,Vivek Sagi,,,Sundar Raghavan,AUS
-Partner Integration,Quantity Limits,Kumar Pillai,"EU: Joel Finkey
-JP: Tsuyoshi Jinguji",TBH,TBH (Lara Sosnosky),,,Anchit  Sathi,SEA
-Partner Integration,Quoting (ex. request for quote),Ananth Vasishta,Ananth Vasishta,Don Yantzi,"TBC - 1 platform (under Satish), Arnab Banerjee (under Bharath)",Alyssa Cone,,Sundar Raghavan,"TBD, HYD"
-Delivery & Fulfillment,Recurring Delivery,Francklin Mondesir,Francklin Mondesir,Steve Fuchs,TBH,,,Anchit  Sathi,SEA (partner team)
-Supplier Discovery & Preference,Registration/Verification ,Virgilia Pruthi,"EU: Justin Farley
-JP: Tsuyoshi Jinguji",TBH (Chad Morris interim),Nate Forman,Jennifer Hoppenrath,Onboarding,Sundar Raghavan,AUS
-Supplier Discovery & Preference,Replenishment,Ruth Densborn,"EU: Joel Finkey
-JP: Tsuyoshi Jinguji",Steve Fuchs,Chendur ,,,Anchit  Sathi,TBD
-Delivery & Fulfillment,Reporting (ABA - AB Analtyics),Ameya Thorat,"EU: Ameya Thorat
-JP: Tsuyoshi Jinguji",None,Vijay Reddy,,,Sundar Raghavan,"SEA,MAD"
-Delivery & Fulfillment,Service upon delivery,(TBH) Gregoire Hirtz,TBD,TBD,TBD,TBD,,Anchit  Sathi,SEA (partner team)
-Delivery & Fulfillment,Speed vs. consolidation (aka Consolidated Deliveries),Guy Friedel,"EU: Joel Finkey
-JP: Tsuyoshi Jinguji",None,None,,,Anchit  Sathi,SEA (partner team)
-Delivery & Fulfillment,Strategic Sourcing,Seattle TBH,TBD,TBD,TBD,,,Sundar Raghavan,
-Delivery & Fulfillment,Ultra-fast delivery,Gregoire Hirtz,TBD,TBD,TBD,TBD,,Anchit  Sathi,SEA (partner team)
+Area,Feature Name,Global PdM,EU PdM,JP (AP) PdM,India POC,TPM,SDM,UX,Team Wiki,Global PdM  Leader,Dev Team Loc,Arch Designs,UX Designs,Description
+AB Commerce Services,"AB Commerce Service (Private Marketplace, aka Janus)",Karimah Knowles; karimahk,TBD,TBD,TTV Raghavan; ttv,David Soldate; dsoldate,Vivek Sagi; vivesagi,TBD,None,Sundar Raghavan; raghavas,AUS,To be added by TPM,To be added by UX,To be added
+"Platform/
+Core Services",Account Management  - International Launches,Murali Govind; muraligo; muraligo,Keith Williams; keithw,Hidemi Takano; hidemt,TTV Raghavan; ttv,Kay Wood; kaywood,Tyler Royal; troyal,Keith Ford; kwford,https://w.amazon.com/index.php/B2B/Business_Accounts,Sundar Raghavan; raghavas,AUS,To be added by TPM,To be added by UX,To be added
+"Platform/
+Core Services",Account Management - Business Accounts Experience (BAX),Murali Govind; muraligo,Keith Williams; keithw,Hidemi Takano; hidemt,TTV Raghavan; ttv,Chad  Morris; thechad,Ryan Clifton; rclif,Will Joyner; joynew,https://w.amazon.com/index.php/B2B/new/BAX,Sundar Raghavan; raghavas,AUS,To be added by TPM,To be added by UX,To be added
+"Platform/
+Core Services",Account Management - EAM,Murali Govind; muraligo,Keith Williams; keithw,Hidemi Takano; hidemt,TTV Raghavan; ttv,Ritu Gupta; ritusg,Adam Seever; seevera ,TBD,https://w.amazon.com/index.php/B2B/Business_Accounts_Platform,Sundar Raghavan; raghavas,AUS,To be added by TPM,To be added by UX,To be added
+"Platform/
+Core Services",Account Management Platform - AMP ,Murali Govind; muraligo,Keith Williams; keithw,Hidemi Takano; hidemt,TTV Raghavan; ttv,Kevin Grubbs; kmgrubbs,Alex Davis; aledavis,David Erwin; erwindav,https://w.amazon.com/index.php/B2B/Projects/AMP,Sundar Raghavan; raghavas,AUS,To be added by TPM,To be added by UX,To be added
+"Platform/
+Core Services",Approvals (Ordering/Spend Management and Policies),Jimin Patel; jiminpat,Keith Williams; keithw,Hidemi Takano; hidemt,TTV Raghavan; ttv,Patricia Ruiz; patruiz,Nachi Meyyappan; nachim,TBD,https://w.amazon.com/index.php/B2B/Llama,Sundar Raghavan; raghavas,SEA,To be added by TPM,To be added by UX,To be added
+B2B Operations,Bulk Delivery Program,Kanishka Roychoudhury; rkanish,Joel Finkey; jfinkey,Tsuyoshi Jinguji; jingujit,TTV Raghavan; ttv,None,None,Chuck Ames; chuckj,None,Anchit  Sathi; sathi,TBD,To be added by TPM,To be added by UX,To be added
+"Customer Acquisition
+ and Buying CX",Business Detail Pages (DPX),"Rushabh Vora; rushabhv
+",Pooja Verma; verpooja,Ayako Ishida; aiishida ,TTV Raghavan; ttv,Gurneet Jodhka; gurneetj,Amit Tipnis; attipnis,TBD,https://w.amazon.com/index.php/B2B/AB%20DPX,Kevin Shields; shieldsk,HYD,To be added by TPM,To be added by UX,To be added
+"Replenishment solutions/
+services",Business Lists,Rick Duong; rduong,Pooja Verma; verpooja,Ayako Ishida; aiishida ,TTV Raghavan; ttv,TBH,Chendur Venkataraman; chendur,TBD,https://w.amazon.com/index.php/B2B/Replenishment,Anchit  Sathi; sathi,TBD,To be added by TPM,To be added by UX,To be added
+"Platform/
+Core Services",Business Only Selection (BOS),Karimah Knowles; karimahk,Pooja Verma; verpooja,Hidemi Takano; hidemt,TTV Raghavan; ttv,None,Curt Berry; curtberr,TBD,https://w.amazon.com/index.php/B2B/Eligo,Sundar Raghavan; raghavas,AUS,To be added by TPM,To be added by UX,To be added
+"Customer Acquisition
+ and Buying CX",Business Search & Discovery,Rajive Hettiaratchi; rajiveh,Pooja Verma; verpooja,Ayako Ishida; aiishida ,TTV Raghavan; ttv,Gurneet Jodhka; gurneetj,N/A Partner Team,Ana Gallardo; anagalla,None,Kevin Shields; shieldsk,"SEA, CA (Sx, A9)",To be added by TPM,To be added by UX,To be added
+Membership Programs,Business Shipping,Muskaan Rataul; muskarat,Joel Finkey; jfinkey,Tsuyoshi Jinguji; jingujit,TTV Raghavan; ttv,Adeel Hasan; kah,Daniel D'Avignon-Aubut; dda,Ana Gallardo; anagalla,https://w.amazon.com/index.php/B2B/Corvega,Moz Thomas; mozthom,MAD,To be added by TPM,To be added by UX,To be added
+"Customer Acquisition
+ and Buying CX",Catalog Quality,Ana Giannoulas; giannoua,Pooja Verma; verpooja,Ayako Ishida; aiishida ,TTV Raghavan; ttv,None,None,TBD,https://w.amazon.com/index.php/Amazon_Business/Catalog_Quality,Kevin Shields; shieldsk,"SEA, HYD (partner teams)",To be added by TPM,To be added by UX,To be added
+"Customer Acquisition
+ and Buying CX",Checkout,Jimin Patel; jiminpat,Jimin Patel; jiminpat,Hidemi Takano; hidemt,TTV Raghavan; ttv,Patricia Ruiz; patruiz,Dave Currie; currdavi,TBD,https://w.amazon.com/index.php/B2B/MahouTeam,Sundar Raghavan; raghavas,MAD,To be added by TPM,To be added by UX,To be added
+"Customer Acquisition
+ and Buying CX",CS Tools & Operations for AB,Kevin Shields; shieldsk,Joel Finkey; jfinkey,Ayako Ishida; aiishida ,TTV Raghavan; ttv,TTV Raghavan; ttv,None,TBD,None,Kevin Shields; shieldsk,HYD (partner teams),To be added by TPM,To be added by UX,To be added
+AB Commerce Services,Curation,Hersh Nagar; naghersh,Pooja Verma; verpooja,Hidemi Takano; hidemt,TTV Raghavan; ttv,David Soldate; dsoldate,Jaime Vallori; vallorij,Fernando Sanchez Ulloa; fernau,https://w.amazon.com/index.php/B2B/Curation,Sundar Raghavan; raghavas,MAD,To be added by TPM,To be added by UX,To be added
+"Customer Acquisition
+ and Buying CX",Customer Acquisition & Marketing Automation,Satya Mishra; ssmishra,Pooja Verma; verpooja,Tsuyoshi Jinguji; jingujit,TTV Raghavan; ttv,Pooja Mandore; poojaman,Mohammed Alabsi; alabsi,TBD,https://w.amazon.com/index.php/B2B/CAM,Sundar Raghavan; raghavas,SEA,To be added by TPM,To be added by UX,To be added
+B2B Operations,Delivery Experience (DEX),Ruth Densborn; densborn,Pooja Verma; verpooja,Tsuyoshi Jinguji; jingujit,TTV Raghavan; ttv,TBD,Neha Goswami (will own DEX ranger team); neha,TBD,None,Anchit  Sathi; sathi,TBD,To be added by TPM,To be added by UX,To be added
+"Platform/
+Core Services",Education/Government,TBD,TBD,TBD,TTV Raghavan; ttv,TBD,Partha Ayala; parthaa,TBD,None,TBD,SEA,To be added by TPM,To be added by UX,To be added
+AB Commerce Services,Enterprise Systems Integrations (fka PPI),Satya Mishra; ssmishra,Satya Mishra; ssmishra,Hidemi Takano; hidemt,TTV Raghavan; ttv,None,Bharat Mabbu; mabbub ,TBD,https://w.amazon.com/index.php/B2B/Nile,Sundar Raghavan; raghavas,SEA,To be added by TPM,To be added by UX,To be added
+"Customer Acquisition
+ and Buying CX",Gateway,"Rushabh Vora; rushabhv
+",Pooja Verma; verpooja,Hidemi Takano; hidemt,TTV Raghavan; ttv,Harisharan Parameshwar; hparames, Parag Chaurasia; pchauras,Jorge Cubillo; cubilloj,https://w.amazon.com/index.php/B2B/GatewayAndNav,Kevin Shields; shieldsk,HYD,To be added by TPM,To be added by UX,To be added
+"Customer Acquisition
+ and Buying CX",Global Navigation,"Rushabh Vora; rushabhv
+",Pooja Verma; verpooja,Ayako Ishida; aiishida ,TTV Raghavan; ttv,Harisharan Parameshwar; hparames, Parag Chaurasia; pchauras,Jorge Cubillo; cubilloj,https://w.amazon.com/index.php/B2B/GatewayAndNav,Kevin Shields; shieldsk,HYD,To be added by TPM,To be added by UX,To be added
+AB Commerce Services,Global Tax and Amazon Tax Exemption Platform (ATEP),Justin Farley; jufarley,VAT: TBD,Tsuyoshi Jinguji; jingujit,TTV Raghavan; ttv,TBD,None,TBD,None,Sundar Raghavan; raghavas,TBD,To be added by TPM,To be added by UX,To be added
+B2B Operations,HC logistics network,Steve Cox; coxstev,TBD,TBD,TTV Raghavan; ttv,TBD,TBD,TBD,None,Anchit  Sathi; sathi,SEA (partner team),To be added by TPM,To be added by UX,To be added
+AB Commerce Services,Ingestion,John Lynch; lynchjp,Pooja Verma; verpooja,Hidemi Takano; hidemt,TTV Raghavan; ttv,David Soldate; dsoldate,Stefan Guna; stefguna,Borja Navarro; borj,None,Sundar Raghavan; raghavas,MAD,To be added by TPM,To be added by UX,To be added
+"Replenishment solutions/
+services",Internal Procurement ,Ashwin Pingali; pingalia   ,TBD,TBD,TTV Raghavan; ttv,Miguel Gonzales; miggon,Lindsey Bauer; bauerl,TBD,https://w.amazon.com/index.php/B2B/Brutus,Anchit  Sathi; sathi,SEA,To be added by TPM,To be added by UX,To be added
+B2B Operations,Inventory Management (Forecasting/Buying/Placement), Adham Abdelfattah; abdadham,Joel Finkey; jfinkey,Tsuyoshi Jinguji; jingujit,TTV Raghavan; ttv,None,None,TBD,None,Anchit  Sathi; sathi,SEA (partner team),To be added by TPM,To be added by UX,To be added
+"Customer Acquisition
+ and Buying CX",Live Expert,Carey Robinson; careyrob,Carey Robinson; careyrob,Carey Robinson; careyrob,TTV Raghavan; ttv,None,Tony Bryan; tonybry,TBD,https://w.amazon.com/index.php/B2B/LiveExpert,Kevin Shields; shieldsk,SEA,To be added by TPM,To be added by UX,To be added
+Membership Programs,Loyalty Program,Diego Asenjo; asenjod,TBD,Tsuyoshi Jinguji; jingujit,TTV Raghavan; ttv,Adeel Hasan; kah,Daniel D'Avignon-Aubut; dda,Ana Gallardo; anagalla,https://w.amazon.com/index.php/B2B/Corvega,Moz Thomas; mozthom,MAD,To be added by TPM,To be added by UX,To be added
+B2B Operations,Master distributor,Gregoire Hirtz; hirtz,TBD,,TTV Raghavan; ttv,TBD,TBD,TBD,None,Anchit  Sathi; sathi,SEA (partner team),To be added by TPM,To be added by UX,To be added
+"Customer Acquisition
+ and Buying CX",Mobile,Kevin Shields; shieldsk,Kevin Shields; shieldsk,Ayako Ishida; aiishida ,TTV Raghavan; ttv,TBH [Aaron Lockey],Vivek Sagi; vivesagi,Chrix Urbina; chrix,None,Kevin Shields; shieldsk,AUS,To be added by TPM,To be added by UX,To be added
+B2B Operations,Multi-package Delivery Synchronization (MPDS),Guy Friedel; guyfr,Joel Finkey; jfinkey,Tsuyoshi Jinguji; jingujit,TTV Raghavan; ttv,None,None,TBD,None,Anchit  Sathi; sathi,SEA (partner team),To be added by TPM,To be added by UX,To be added
+B2B Operations,Pallets level 2,Steve Cox; coxstev,TBD,TBD,TTV Raghavan; ttv,TBD,TBD,TBD,None,Anchit  Sathi; sathi,SEA (partner team),To be added by TPM,To be added by UX,To be added
+"Replenishment solutions/
+services",Pay by Invoice,Ben Goelz; bgoeltz,"Marika Semerdzhian; semerdzh
+
+
+ ",Tsuyoshi Jinguji; jingujit,TTV Raghavan; ttv,Damana Madden; damanam ,Tony Bryan (AB); tonybry,TBD,https://w.amazon.com/index.php/B2B/Invoicing,Anchit  Sathi; sathi,SEA,To be added by TPM,To be added by UX,To be added
+"Customer Acquisition
+ and Buying CX",Personalization (P13N),Paul Jaeschke; pjaeschk,Pooja Verma; verpooja,Ayako Ishida; aiishida ,TTV Raghavan; ttv,Gurneet Jodhka; gurneetj,None in AB,Andres Saa; andsaa,None,Kevin Shields; shieldsk,SEA (partner team),To be added by TPM,To be added by UX,To be added
+"Platform/
+Core Services",Pricing - VFBD/QP/Segment,John Lynch; lynchjp,John Lynch; lynchjp,Hidemi Takano; hidemt,TTV Raghavan; ttv,Joanna Gallo; jhgallo,Satish Vohra; vsatish,Jorge Cubillo; cubilloj,https://w.amazon.com/index.php/B2B/Pricing/Team_Charter,Sundar Raghavan; raghavas,"SEA, MAD",To be added by TPM,To be added by UX,To be added
+"Platform/
+Core Services",Pricing-CSP,Diane Lee; leediane,Pooja Verma; verpooja,Hidemi Takano; hidemt,TTV Raghavan; ttv,Joanna Gallo; jhgallo,Satish Vohra; vsatish,Jorge Cubillo; cubilloj,https://w.amazon.com/index.php/B2B/Pricing/Team_Charter,Sundar Raghavan; raghavas,"SEA, MAD",To be added by TPM,To be added by UX,To be added
+"Platform/
+Core Services",Professional Licensing Platform (PLP)/Certification. Healthcare Vertical.,Justin Farley; jufarley,N/A,Hidemi Takano; hidemt,TTV Raghavan; ttv,TBH,James Mitchell; jamemtc,TBD,https://w.amazon.com/index.php/Soyuz,Sundar Raghavan; raghavas,SEA,To be added by TPM,To be added by UX,To be added
+B2B Operations,Quantity Limits,Kumar Pillai; kppillai,Joel Finkey; jfinkey,Tsuyoshi Jinguji; jingujit,TTV Raghavan; ttv,TBH,Nagendra Jammi; njammi,TBD,https://w.amazon.com/index.php/B2B/Replenishment,Anchit  Sathi; sathi,SEA,To be added by TPM,To be added by UX,To be added
+AB Commerce Services,Quoting (ex. request for quote),Ananth Vasishta; vasishta,Ananth Vasishta; vasishta,Hidemi Takano; hidemt,TTV Raghavan; ttv,Don Yantzi; yantzid,TBC - 1 platform (under Satish); Arnab Banerjee (under Bharath),Alyssa Cone; acone,https://w.amazon.com/index.php/B2B/Galaga/RFQ,Sundar Raghavan; raghavas,"TBD, HYD",To be added by TPM,To be added by UX,To be added
+"Replenishment solutions/
+services",Recurring Delivery,Francklin Mondesir; mondesif,Francklin Mondesir; mondesif,Ayako Ishida; aiishida ,TTV Raghavan; ttv,Steve Fuchs; stevef,TBH,TBD,https://w.amazon.com/index.php/B2B/Replenishment,Anchit  Sathi; sathi,SEA (partner team),To be added by TPM,To be added by UX,To be added
+"Platform/
+Core Services",Registration/Verification ,Virgilia Pruthi; virgilis, ,Hidemi Takano; hidemt,TTV Raghavan; ttv,TBH (Chad Morris interim),Nate Forman; natefor,Jennifer Hoppenrath; hoppenrj,https://w.amazon.com/index.php/B2B/Onboarding,Sundar Raghavan; raghavas,AUS,To be added by TPM,To be added by UX,To be added
+"Replenishment solutions/
+services",Replenishment,Ruth Densborn; densborn,Joel Finkey; jfinkey,Tsuyoshi Jinguji; jingujit,TTV Raghavan; ttv,Steve Fuchs; stevef,Chendur Venkataraman; chendur,TBD,https://w.amazon.com/index.php/B2B/Replenishment,Anchit  Sathi; sathi,TBD,To be added by TPM,To be added by UX,To be added
+AB Commerce Services,Reporting & Analytics (ABA - AB Analtyics),Ameya Thorat; ameyat,Ameya Thorat; ameyat,Hidemi Takano; hidemt,TTV Raghavan; ttv,None,Vijay Reddy; vireddy,TBD,https://w.amazon.com/index.php/B2B/RNA,Sundar Raghavan; raghavas,"SEA,MAD",To be added by TPM,To be added by UX,To be added
+B2B Operations,Service upon delivery,Gregoire Hirtz; hirtz,TBD,TBD,TTV Raghavan; ttv,TBD,TBD,TBD,None,Anchit  Sathi; sathi,SEA (partner team),To be added by TPM,To be added by UX,To be added
+B2B Operations,Speed vs. consolidation (aka Consolidated Deliveries),Guy Friedel; guyfr,Joel Finkey; jfinkey,Tsuyoshi Jinguji; jingujit,TTV Raghavan; ttv,None,None,TBD,None,Anchit  Sathi; sathi,SEA (partner team),To be added by TPM,To be added by UX,To be added
+B2B Operations,Ultra-fast delivery,Gregoire Hirtz; hirtz,TBD,TBD,TTV Raghavan; ttv,TBD,TBD,TBD,None,Anchit  Sathi; sathi,SEA (partner team),To be added by TPM,To be added by UX,To be added
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,

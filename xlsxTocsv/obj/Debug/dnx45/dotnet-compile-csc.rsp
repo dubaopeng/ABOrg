@@ -1,0 +1,13 @@
+﻿-d:DEBUG
+-d:TRACE
+-d:DNX45
+-nowarn:CS1701
+-nowarn:CS1702
+-nowarn:CS1705
+-platform:x64
+-debug:portable
+-nostdlib
+-nologo
+"c:\Users\camccoll\Documents\Projects\ABOrg\xlsxTocsv\obj\Debug\dnx45\dotnet-compile.assemblyinfo.cs"
+-out:"c:\Users\camccoll\Documents\Projects\ABOrg\xlsxTocsv\bin\Debug\dnx45\xlsxTocsv.exe"
+"c:\Users\camccoll\Documents\Projects\ABOrg\xlsxTocsv\Program.cs"

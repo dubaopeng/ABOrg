@@ -39,13 +39,13 @@ function update(source) {
     .style("fill-opacity", 1)
     .on("click", onNav)
     .on("mouseover", function(d){
-        if (d.link) {
-            tooltip[0][0].innerHTML = d.link;
+        if (d.data.link) {
+            tooltip._groups[0][0].innerHTML = d.data.link;
             return tooltip.style("visibility", "visible");
         }
     })
     .on("mousemove", function(d){
-        if (d.link) {
+        if (d.data.link) {
         return tooltip.style("top", (d3.event.pageY-20)+"px").style("left",(d3.event.pageX+20)+"px");
         }
     })

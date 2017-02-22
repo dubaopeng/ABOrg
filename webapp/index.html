@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Amazon Business Organization Graph</title>
+
+    <style>
+      div#abGraphBackground{
+        background-image: url("./amazonbusiness.png"); 
+        position: fixed;
+        opacity: 0.1;
+        z-index: -1;
+        left: 0;
+        top: 80px;
+        width: 100%;
+        height: 100%;
+      }
+
+      div#abGraphTitle{
+        text-align: center;
+        left: 0;
+        top: 0;
+        width: 100%;
+      }
+
+      div#abGraph{
+        left: 0;
+        top: 80;
+        width: 100%;
+        height: 100%;
+      }
+
+      div#unsupported{
+        display: none;
+        visibility: hidden;
+      }
+
+      img {
+        opacity: 0.5;
+      }
+
+      .node {
+        cursor: pointer;
+      }
+
+      .node circle {
+        fill: #fff;
+        stroke: steelblue;
+        stroke-width: 3px;
+      }
+
+      .node text {
+        font: 14px sans-serif;
+        font-weight: bold;
+        word-wrap: break-word;
+        max-width: 100px;
+      }
+
+      .link {
+        fill: none;
+        stroke: #ccc;
+        stroke-width: 2px;
+      }
+	
+    </style>
+  </head>
+  <body>
+    <div id="unsupported" >
+      <h1>This page is not supported on Internet Explorer. Works on Microsoft Edge, Chrome and Firefox</h1>
+    </div>
+    <div id="abGraphTitle">
+      <a href="https://w.amazon.com/index.php/B2B">
+        <img src="./ablogo.png" height="50px" align="left">
+      </a>
+      <h1>Amazon Business Organization Graph</h1>
+    </div>
+    <div id="abGraph">
+      <div id="abGraphBackground">
+      </div>
+      <svg>
+        <defs>
+          <pattern id="team" patternUnits="objectBoundingBox" height="100%" width="100%">
+            <image xlink:href="./team.png" height="60" width="60" preserveAspectRatio = "none"></image>
+          </pattern>
+          <pattern id="ux" patternUnits="objectBoundingBox" height="100%" width="100%">
+            <image xlink:href="./ux.png" height="60" width="60" preserveAspectRatio = "none"></image>
+          </pattern>
+          <pattern id="architecture" patternUnits="objectBoundingBox" height="100%" width="100%">
+            <image xlink:href="./architecture.png" height="60" width="60" preserveAspectRatio = "none"></image>
+          </pattern>
+          <pattern id="service" patternUnits="objectBoundingBox" height="100%" width="100%">
+            <image xlink:href="./service.png" height="60" width="60" preserveAspectRatio = "none"></image>
+          </pattern>
+          <pattern id="contacts" patternUnits="objectBoundingBox" height="100%" width="100%">
+            <image xlink:href="./contacts.png" height="60" width="60" preserveAspectRatio = "none"></image>
+          </pattern>
+          <pattern id="bull" patternUnits="objectBoundingBox" height="100%" width="100%">
+            <image xlink:href="./bull.png" height="60" width="60" preserveAspectRatio = "none"></image>
+          </pattern>   
+          <pattern id="spaceneedle" patternUnits="objectBoundingBox" height="100%" width="100%">
+            <image xlink:href="./spaceneedle.png" height="60" width="60" preserveAspectRatio = "none"></image>
+          </pattern>
+          <pattern id="texas" patternUnits="objectBoundingBox" height="100%" width="100%">
+            <image xlink:href="./texas.png" height="60" width="60" preserveAspectRatio = "none"></image>
+          </pattern>
+          <pattern id="india" patternUnits="objectBoundingBox" height="100%" width="100%">
+            <image xlink:href="./india.png" height="60" width="60" preserveAspectRatio = "none"></image>
+          </pattern>                                 
+        </defs>
+      </svg> 
+    </div>
+
+    <script src="./drawgraph.js"></script>
+    <script src="./d3.js"></script>
+    <script src="./generategraphdata.js"></script>
+
+    <script>
+
+      //Check for unsupported IE browser
+      var unsupportedDiv = document.querySelector('#unsupported');
+      if (isIE11()) {
+
+        unsupportedDiv.style.display = "block";
+        unsupportedDiv.style.visibility = "visible";
+        document.body.innerHTML = unsupportedDiv.outerHTML;
+        console.log("IE is unsupported for this page");
+      }
+      else {
+        var tooltip = d3.select("body")
+            .append("div")
+            .style("position", "absolute")
+            .style("z-index", "10")
+            .style("visibility", "hidden")
+            .text("a simple tooltip");
+
+        var i = 0,
+            duration = 750,
+            root;
+
+        var margin = {top: 20, right: 120, bottom: 20, left: 200},
+            width = 2000 - margin.right - margin.left,
+            height = 800 - margin.top - margin.bottom;
+            
+        var tree = d3.tree()
+            .size([height, width]);
+
+        var svg = d3.select("body").select("#abGraph").select("svg")
+            .attr("width", width + margin.right + margin.left)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+        d3.csv("./roadmap.csv", function(data){
+
+            var graphData = generateGraphData(data);
+
+            var treeData = d3.stratify()
+              .id(function(d) { return d.name; })
+              .parentId(function(d) { return d.parent; })
+              (graphData);
+
+            // ************** Generate the tree diagram	 *****************
+            root = treeData;
+            root.x0 = height / 2;
+            root.y0 = 0;
+            
+            update(root);
+
+            d3.select(self.frameElement).style("height", "500px");
+
+            //Compute the new tree layout.
+            var nodes = tree(root);
+
+            // Normalize for fixed-depth.
+            nodes.descendants().reverse().forEach(function(d) { 
+                if (d.children) {
+                  d._children = d.children;
+                  d.children = null;
+                } else {
+                  d.children = d._children;
+                  d._children = null;
+                } 
+            });
+
+            update(root);
+        });
+      }
+
+    </script> 
+
+  </body>
+</html>
